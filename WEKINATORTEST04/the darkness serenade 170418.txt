@@ -1,0 +1,12 @@
+
+
+The Darkness Serenade by Colin Higgs
+
+medium: interactive installation
+space requirements: 2.5 square metres
+
+
+There is something very engaging about the unexpected. The unexpected in this generative art installation is in the direct and gestural movement the spectator can have on a graphical interactive display and how they react to or notice the sounds they are making. There is a lot for the person to learn about the work. How they fit into it. What they add to the work. How they can construct both unique and unusual sounds and graphics that they feel are part of a performance. Their performance. They are the conductors of the piece.The project is an installation of a symbolic journey towards darkness with an element of hope.  The spectator embarks on a symbolic journey of interaction and creation of both sound and visuals.The performance starts up by the spectator entering a small light-projected arena. They stay in a centre area for 10 seconds until the sensors pick them up and all the system is reset. The graphics which are projected onto the floor are reset and so is the sound score to nothing.The person notices that as he/she travels around the projected arena the graphics seems to be approaching them or backing off them depending on the type of motion they make. They also notice that the sounds they create are made by there own movements. Each time they move they create a series of sounds. The darkness side of the piece of work corresponds to a black generative graphic that spreads towards the spectator if she/he does not move. The hope of the piece lies in the somewhat dissonant landscape sounds created by the movement of the person. Partly noise and partly tonal. 
+The balance between the graphic and sound (darkness and hope) lies between the number of movements and distance moved relating to the numbers of sound samples generated and the way the graphic moves towards the spectator or away from the spectator. The sound will also be influenced as well by the persons movement (motion detection algorithm). 
+
+

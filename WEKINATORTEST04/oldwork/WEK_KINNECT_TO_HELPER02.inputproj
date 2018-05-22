@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<WekiInputHelperFileData>
+  <oscReceivePort>6448</oscReceivePort>
+  <oscSendPort>6449</oscSendPort>
+  <sendHostname>localhost</sendHostname>
+  <sendOscMessage>/wek/inputs</sendOscMessage>
+  <inputs>
+    <oscMessage>/kinnect/inputs</oscMessage>
+    <numInputs>6</numInputs>
+    <groupName>Inputs</groupName>
+    <inputNames>
+      <string>posx</string>
+      <string>posy</string>
+      <string>vel</string>
+      <string>accel</string>
+      <string>time</string>
+      <string>signal</string>
+    </inputNames>
+  </inputs>
+  <outputs>
+    <outputs class="linked-list">
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>accel_Max10</name>
+        <index>3</index>
+        <windowSize>10</windowSize>
+        <op class="wekiinputhelper.Modifiers.MaxWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>accel_StdDev10</name>
+        <index>3</index>
+        <windowSize>10</windowSize>
+        <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>posx_StdDev10</name>
+        <index>0</index>
+        <windowSize>10</windowSize>
+        <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>posy_StdDev10</name>
+        <index>1</index>
+        <windowSize>10</windowSize>
+        <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+    </outputs>
+    <numOutputTypes>4</numOutputTypes>
+    <dimensionality>4</dimensionality>
+    <hasDependencies>false</hasDependencies>
+  </outputs>
+  <inputTriggerer class="wekiinputhelper.TriggerOnNth">
+    <c>
+      <type>NONE</type>
+      <howLong>ONCE</howLong>
+      <index>0</index>
+      <val>0.0</val>
+      <appliesTo>INPUT</appliesTo>
+    </c>
+    <n>5</n>
+  </inputTriggerer>
+  <isSendingOriginalInputs>true</isSendingOriginalInputs>
+</WekiInputHelperFileData>

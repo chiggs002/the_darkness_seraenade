@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<OSCInputGroup>
+  <oscMessage>/wek/inputs</oscMessage>
+  <numInputs>10</numInputs>
+  <groupName>Inputs</groupName>
+  <inputNames>
+    <string>iposx</string>
+    <string>iposy</string>
+    <string>ivel</string>
+    <string>iaccel</string>
+    <string>itime</string>
+    <string>isignal</string>
+    <string>iaccel_max</string>
+    <string>iaccel_stddev</string>
+    <string>iposx_stddev</string>
+    <string>iposy_stddev</string>
+  </inputNames>
+</OSCInputGroup>

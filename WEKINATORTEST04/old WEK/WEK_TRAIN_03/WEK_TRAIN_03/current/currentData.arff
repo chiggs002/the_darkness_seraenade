@@ -1,0 +1,57 @@
+@relation dataset
+
+@attribute ID numeric
+@attribute Time date 'yyyy/MM/dd HH:mm:ss:SSS'
+@attribute 'Training round' numeric
+@attribute posx numeric
+@attribute posy numeric
+@attribute vel numeric
+@attribute accel numeric
+@attribute time numeric
+@attribute signal numeric
+@attribute accel_max10 numeric
+@attribute accel_stddev numeric
+@attribute posx_stddev numeric
+@attribute posy_stddev numeric
+@attribute posx9 numeric
+@attribute posx8 numeric
+@attribute posx7 numeric
+@attribute posx6 numeric
+@attribute posx5 numeric
+@attribute posx4 numeric
+@attribute posx3 numeric
+@attribute posx2 numeric
+@attribute posx1 numeric
+@attribute posx0 numeric
+@attribute posy9 numeric
+@attribute posy8 numeric
+@attribute posy7 numeric
+@attribute posy6 numeric
+@attribute posy5 numeric
+@attribute posy4 numeric
+@attribute posy3 numeric
+@attribute posy2 numeric
+@attribute posy1 numeric
+@attribute posy0 numeric
+@attribute outputs-1 numeric
+@attribute outputs-2 numeric
+@attribute outputs-3 numeric
+@attribute outputs-4 numeric
+@attribute outputs-5 numeric
+@attribute outputs-6 numeric
+@attribute outputs-7 numeric
+@attribute outputs-8 numeric
+@attribute outputs-9 numeric
+@attribute outputs-10 numeric
+@attribute outputs-11 numeric
+@attribute outputs-12 numeric
+@attribute outputs-13 numeric
+@attribute outputs-14 numeric
+@attribute outputs-15 numeric
+@attribute outputs-16 numeric
+@attribute outputs-17 numeric
+@attribute outputs-18 numeric
+@attribute outputs-19 numeric
+@attribute outputs-20 numeric
+
+@data

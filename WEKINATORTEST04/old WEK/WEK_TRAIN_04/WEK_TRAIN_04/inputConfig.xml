@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<OSCInputGroup>
+  <oscMessage>/wek/inputs</oscMessage>
+  <numInputs>10</numInputs>
+  <groupName>Inputs</groupName>
+  <inputNames>
+    <string>posx</string>
+    <string>posy</string>
+    <string>vel</string>
+    <string>accel</string>
+    <string>time</string>
+    <string>signal</string>
+    <string>accel_Max10</string>
+    <string>accel_stddev</string>
+    <string>posx_stddev</string>
+    <string>posy_stddev</string>
+  </inputNames>
+</OSCInputGroup>

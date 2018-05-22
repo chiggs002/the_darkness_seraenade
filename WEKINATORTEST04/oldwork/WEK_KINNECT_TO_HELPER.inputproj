@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<WekiInputHelperFileData>
+  <oscReceivePort>6448</oscReceivePort>
+  <oscSendPort>6449</oscSendPort>
+  <sendHostname>localhost</sendHostname>
+  <sendOscMessage>/wek/inputs</sendOscMessage>
+  <inputs>
+    <oscMessage>/kinnect/inputs</oscMessage>
+    <numInputs>6</numInputs>
+    <groupName>Inputs</groupName>
+    <inputNames>
+      <string>posx</string>
+      <string>posy</string>
+      <string>vel</string>
+      <string>accel</string>
+      <string>time</string>
+      <string>signal</string>
+    </inputNames>
+  </inputs>
+  <outputs>
+    <outputs class="linked-list">
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>accel_Max10</name>
+        <index>3</index>
+        <windowSize>10</windowSize>
+        <op class="wekiinputhelper.Modifiers.MaxWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>accel_StdDev10</name>
+        <index>3</index>
+        <windowSize>10</windowSize>
+        <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>posx_StdDev10</name>
+        <index>0</index>
+        <windowSize>10</windowSize>
+        <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+      <wekiinputhelper.Modifiers.WindowedOperation>
+        <name>posy_StdDev10(2)</name>
+        <index>1</index>
+        <windowSize>10</windowSize>
+        <op class="wekiinputhelper.Modifiers.StdDevWindowOperation"/>
+      </wekiinputhelper.Modifiers.WindowedOperation>
+      <wekiinputhelper.Modifiers.BufferedInput>
+        <names>
+          <string>posx[n-9]</string>
+          <string>posx[n-8]</string>
+          <string>posx[n-7]</string>
+          <string>posx[n-6]</string>
+          <string>posx[n-5]</string>
+          <string>posx[n-4]</string>
+          <string>posx[n-3]</string>
+          <string>posx[n-2]</string>
+          <string>posx[n-1]</string>
+          <string>posx[n]</string>
+        </names>
+        <index>0</index>
+        <bufferSize>10</bufferSize>
+      </wekiinputhelper.Modifiers.BufferedInput>
+      <wekiinputhelper.Modifiers.BufferedInput>
+        <names>
+          <string>posy[n-9]</string>
+          <string>posy[n-8]</string>
+          <string>posy[n-7]</string>
+          <string>posy[n-6]</string>
+          <string>posy[n-5]</string>
+          <string>posy[n-4]</string>
+          <string>posy[n-3]</string>
+          <string>posy[n-2]</string>
+          <string>posy[n-1]</string>
+          <string>posy[n]</string>
+        </names>
+        <index>1</index>
+        <bufferSize>10</bufferSize>
+      </wekiinputhelper.Modifiers.BufferedInput>
+    </outputs>
+    <numOutputTypes>6</numOutputTypes>
+    <dimensionality>24</dimensionality>
+    <hasDependencies>false</hasDependencies>
+  </outputs>
+  <inputTriggerer class="wekiinputhelper.TriggerOnReceive">
+    <c>
+      <type>NONE</type>
+      <howLong>ONCE</howLong>
+      <index>0</index>
+      <val>0.0</val>
+      <appliesTo>INPUT</appliesTo>
+    </c>
+  </inputTriggerer>
+  <isSendingOriginalInputs>true</isSendingOriginalInputs>
+</WekiInputHelperFileData>

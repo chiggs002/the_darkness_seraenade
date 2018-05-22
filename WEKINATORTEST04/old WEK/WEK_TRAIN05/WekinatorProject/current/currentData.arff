@@ -1,0 +1,34 @@
+@relation dataset
+
+@attribute ID numeric
+@attribute Time date 'yyyy/MM/dd HH:mm:ss:SSS'
+@attribute 'Training round' numeric
+@attribute iposx numeric
+@attribute iposy numeric
+@attribute ivel numeric
+@attribute iaccel numeric
+@attribute itime numeric
+@attribute isignal numeric
+@attribute iaccel_max numeric
+@attribute iaccel_stddev numeric
+@attribute iposx_stddev numeric
+@attribute iposy_stddev numeric
+@attribute posx numeric
+@attribute posy numeric
+@attribute vel numeric
+@attribute accel numeric
+@attribute time numeric
+@attribute signal {0,1,2}
+@attribute accel_max10 numeric
+@attribute accel_stddev10 numeric
+@attribute posx_stddev numeric
+@attribute posy_stddev numeric
+@attribute conductor_events {0,1,2,3,4,5,6,7,8,9,10}
+@attribute contuctor_time numeric
+@attribute graphics_trigger numeric
+@attribute color_trigger numeric
+@attribute particle_maxspeed numeric
+@attribute particle_maxforce numeric
+@attribute mixgraphics {0,1,2,3}
+
+@data

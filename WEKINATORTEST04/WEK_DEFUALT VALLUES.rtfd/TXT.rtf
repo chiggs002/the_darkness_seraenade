@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11820\viewh11240\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 		1     POSX:								0\
+		2	POSY:								0\
+		3	VEL:								       2.55\
+		4	
+\b ACCEL:							      4.88
+\b0 \
+		5	TIME:								0\
+		6	
+\b SIGNAL:								def 1 on 2
+\b0 \
+		7	ACCEL_MAX:							2.34\
+		8	ACCEL_STD_DEV:						1.5\
+		9	POSX_STDDEV;						6.27\
+		10	POSY_STSDEV:						6.16\
+\
+		11	CONDUCTOR_EVENTS:                                   1\
+\
+		12	
+\b CONDUCTOR_TIME:					12895
+\b0 \
+\
+		13
+\b 	GRAPHICS_TRIGGER:	                                 0.0241      > 5\
+                 14         color_TRIGGER:						1.2166        > 25
+\b0 \
+		15	PART_MAXSPEED:						0.0673\
+		16	PART_MAXFORCE:						-0.00178\
+		17	MIXGRAPHICS: 						 2\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+oscFloatx1 = map(theOscMessage.get(0).floatValue(),0,640,0,1920);\
+        oscFloaty1 = map(theOscMessage.get(1).floatValue(),0,480,0,1080);\
+        oscFloatvel1 =map(theOscMessage.get(2).floatValue(),2.55,100,0,100);\
+        oscFloataccel1 = map(theOscMessage.get(3).floatValue(),4.88,200,0,200);\
+        oscCountTime = map(theOscMessage.get(4).floatValue(),0,100,0,100);\
+        oscFloatSignal = map(theOscMessage.get(5).floatValue(),1,2,0,1);\
+        oscAccelMax = map(theOscMessage.get(6).floatValue(),2.345,200,0,200);\
+        oscAccelStdDev = map(theOscMessage.get(7).floatValue(),1.5,100,0,100);\
+        oscposXStdDev =  map(theOscMessage.get(8).floatValue(),6.27,200,0,200);\
+        oscposYStdDev = map(theOscMessage.get(9).floatValue(),6.16,200,0,200);\
+        oscConductEvents = map(theOscMessage.get(10).floatValue(),1,10,1,10);\
+        oscConductTime = theOscMessage.get(11).floatValue();\
+        oscGraphicsTrigger=map(theOscMessage.get(12).floatValue(),0.0241,25,1,5);\
+        oscColourTrigger=map(theOscMessage.get(13).floatValue(),1.2166,50,1,12);\
+        oscParticlemaxspeed = map(theOscMessage.get(14).floatValue(),0.0673,10,0,3);\
+        oscParticlemaxforce = map(theOscMessage.get(15).floatValue(),-0.00178,10,1,10);\
+        oscMixGraphics = int(theOscMessage.get(15).floatValue() );			\
+}
